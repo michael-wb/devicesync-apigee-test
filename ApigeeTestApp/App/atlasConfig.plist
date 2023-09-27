@@ -7,14 +7,14 @@
 	<key>appUrl</key>
 	<string>https://realm.mongodb.com/groups/644bdf763aca4657e5be0173/apps/6512022c532a9d11e283ef3d</string>
 	<key>baseUrl</key>
-	<string>https://realm.mongodb.com</string>
+	<string>https://34.111.234.31.nip.io/device-sync</string>
 	<key>clientApiBaseUrl</key>
 	<string>https://us-east-1.aws.realm.mongodb.com</string>
 	<key>dataApiBaseUrl</key>
 	<string>https://us-east-1.aws.data.mongodb-api.com</string>
-    <key>dataExplorerLink</key>
-    <string>https://cloud.mongodb.com/links/644bdf763aca4657e5be0173/explorer/SampleData/database/collection/find</string>
-    <key>dataSourceName</key>
-    <string>mongodb-atlas</string>
+	<key>dataExplorerLink</key>
+	<string>https://cloud.mongodb.com/links/644bdf763aca4657e5be0173/explorer/SampleData/database/collection/find</string>
+	<key>dataSourceName</key>
+	<string>mongodb-atlas</string>
 </dict>
 </plist>

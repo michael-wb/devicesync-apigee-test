@@ -1,2 +1,10 @@
 # Ignored files
 .DS_Store
+
+# XCode
+*.bak
+xcuserdata/
+project.xcworkspace
+*.xccheckout
+DerivedData
+/.build

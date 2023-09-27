@@ -32,7 +32,7 @@
 		68D3DF592942677E005209D9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		911F548727C6A2BC005D4876 /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		912196BD27C6868100407648 /* atlasConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = atlasConfig.plist; sourceTree = "<group>"; };
-		913D46472770E46800ABE7D3 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		913D46472770E46800ABE7D3 /* ApigeeTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApigeeTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		913D464A2770E46800ABE7D3 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		913D464C2770E46800ABE7D3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		913D464E2770E46A00ABE7D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		913D46482770E46800ABE7D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				913D46472770E46800ABE7D3 /* App.app */,
+				913D46472770E46800ABE7D3 /* ApigeeTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -121,9 +121,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		913D46462770E46800ABE7D3 /* App */ = {
+		913D46462770E46800ABE7D3 /* ApigeeTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 913D46552770E46A00ABE7D3 /* Build configuration list for PBXNativeTarget "App" */;
+			buildConfigurationList = 913D46552770E46A00ABE7D3 /* Build configuration list for PBXNativeTarget "ApigeeTestApp" */;
 			buildPhases = (
 				913D46432770E46800ABE7D3 /* Sources */,
 				913D46442770E46800ABE7D3 /* Frameworks */,
@@ -133,13 +133,13 @@
 			);
 			dependencies = (
 			);
-			name = App;
+			name = ApigeeTestApp;
 			packageProductDependencies = (
 				915E4139284937E700D7C234 /* Realm */,
 				915E413B284937E700D7C234 /* RealmSwift */,
 			);
 			productName = "realm-template-apps-swiftui";
-			productReference = 913D46472770E46800ABE7D3 /* App.app */;
+			productReference = 913D46472770E46800ABE7D3 /* ApigeeTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -157,7 +157,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 913D46422770E46800ABE7D3 /* Build configuration list for PBXProject "App" */;
+			buildConfigurationList = 913D46422770E46800ABE7D3 /* Build configuration list for PBXProject "ApigeeTestApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -173,7 +173,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				913D46462770E46800ABE7D3 /* App */,
+				913D46462770E46800ABE7D3 /* ApigeeTestApp */,
 			);
 		};
 /* End PBXProject section */
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		913D46422770E46800ABE7D3 /* Build configuration list for PBXProject "App" */ = {
+		913D46422770E46800ABE7D3 /* Build configuration list for PBXProject "ApigeeTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				913D46532770E46A00ABE7D3 /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		913D46552770E46A00ABE7D3 /* Build configuration list for PBXNativeTarget "App" */ = {
+		913D46552770E46A00ABE7D3 /* Build configuration list for PBXNativeTarget "ApigeeTestApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				913D46562770E46A00ABE7D3 /* Debug */,
