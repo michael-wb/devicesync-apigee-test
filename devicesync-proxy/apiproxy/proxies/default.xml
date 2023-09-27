@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+  <Description/>
+  <FaultRules/>
+  <PreFlow name="PreFlow">
+    <Request>
+      <Step>
+        <!-- Extract the URI portion of the request URL -->
+        <Name>JS-ExtractTargetUrl</Name>
+      </Step>
+    </Request>
+    <Response/>
+  </PreFlow>
+  <PostFlow name="PostFlow">
+    <Request/>
+    <Response>
+      <Step>
+        <Condition>proxy.pathsuffix MatchesPath "/app/*/location"</Condition>
+        <!-- Generate the /location response that points to Apigee -->
+        <Name>AM-LocationResponse</Name>
+      </Step>
+    </Response>
+  </PostFlow>
+  <HTTPProxyConnection>
+    <BasePath>/device-sync/api/client/v2.0</BasePath>
+    <Properties/>
+    <VirtualHost>default</VirtualHost>
+  </HTTPProxyConnection>
+  <RouteRule name="location">
+    <Condition>proxy.pathsuffix MatchesPath "/app/*/location"</Condition>
+    <!-- Do nothing - Response Postflow will generate the response -->
+  </RouteRule>
+  <RouteRule name="websocket">
+    <Condition>proxy.pathsuffix MatchesPath "/app/*/realm-sync"</Condition>
+    <!-- Route for Device Sync websocket connection requests -->
+    <TargetEndpoint>websocket</TargetEndpoint>
+  </RouteRule>
+  <RouteRule name="default">
+    <!-- Catch all route for all other requests -->
+    <TargetEndpoint>default</TargetEndpoint>
+  </RouteRule>
+</ProxyEndpoint>

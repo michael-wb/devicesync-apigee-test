@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="12" name="devicesync-proxy">
+  <DisplayName>devicesync-proxy</DisplayName>
+  <Description>Proxy for Atlas Device Sync apps</Description>
+  <BasePaths>/device-sync/api/client/v2.0</BasePaths>
+  <Policies>
+    <Policy>AM-LocationResponse</Policy>
+    <Policy>JS-ExtractTargetUrl</Policy>
+    <Policy>RF-204NoContent</Policy>
+  </Policies>
+  <ProxyEndpoints>
+    <ProxyEndpoint>default</ProxyEndpoint>
+  </ProxyEndpoints>
+  <Resources>
+    <Resource>properties://devicesync.properties</Resource>
+    <Resource>jsc://extract-target-url.js</Resource>
+  </Resources>
+  <TargetEndpoints>
+    <TargetEndpoint>default</TargetEndpoint>
+    <TargetEndpoint>websocket</TargetEndpoint>
+  </TargetEndpoints>
+</APIProxy>

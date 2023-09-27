@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault continueOnError="false" enabled="true" name="RF-204NoContent">
+  <DisplayName>RF-204NoContent</DisplayName>
+  <!-- Generate a fake 204 response -->
+  <Properties/>
+  <FaultResponse>
+    <Set>
+      <Headers/>
+      <Payload/>
+      <StatusCode>204</StatusCode>
+      <ReasonPhrase>No Content</ReasonPhrase>
+      <Verb>DELETE</Verb>
+    </Set>
+    <Add>
+      <Headers>
+        <Header name="FaultHeader">{fault.name}</Header>
+      </Headers>
+    </Add>
+  </FaultResponse>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

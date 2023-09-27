@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-LocationResponse">
+  <DisplayName>AM-LocationResponse</DisplayName>
+  <!-- Generate a response for requests to the /location endpoint -->
+  <!-- Uses the apigee-host and apigee-prefix property values to point to apigee -->
+  <Properties/>
+  <AssignVariable>
+    <Name>apigee-host</Name>
+    <PropertySetRef>devicesync.apigee-host</PropertySetRef>
+  </AssignVariable>
+  <AssignVariable>
+    <Name>apigee-prefix</Name>
+    <PropertySetRef>devicesync.apigee-prefix</PropertySetRef>
+  </AssignVariable>
+  <Set>
+    <Headers/>
+    <Payload contentType="application/json">{"deployment_model":"LOCAL","location":"US-VA","hostname":"https://{apigee-host}/{apigee-prefix}","ws_hostname":"wss://{apigee-host}/{apigee-prefix}"}</Payload>
+    <Path/>
+    <StatusCode>200</StatusCode>
+    <Verb>GET</Verb>
+  </Set>
+  <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+  <AssignTo createNew="false" transport="http" type="request"/>
+</AssignMessage>
