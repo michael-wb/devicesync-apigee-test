@@ -1,10 +1,13 @@
-# Ignored files
+# System files
 .DS_Store
 
-# XCode
+# XCode files
 *.bak
 xcuserdata/
 project.xcworkspace
 *.xccheckout
 DerivedData
 /.build
+
+# Project outputs
+devicesync-proxy/devicesync-proxy.zip
