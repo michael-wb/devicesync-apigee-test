@@ -62,9 +62,9 @@ demo, this value was `https://34.111.234.31.nip.io/device-sync`, where `apigee-h
     * GET request to the _**/login_ endpoint when the user logs in
     * POST request to the _**/profile_ endpoint to retrieve the user profile information
     * GET requests to the _**/realm-sync_ endpoint with a 101 response will be seen when a websocket
-      is closed will be seen. These will be periodically while the app is running, likely due to an
-      inactivity timeout imposed by Apigee. The websocket connection will be re-established by the
-      iOS app after a second or two.
+      is closed. These will be periodically while the app is running, likely due to an inactivity
+      timeout imposed by Apigee. The websocket connection will be re-established by the iOS app after
+      a second or two.
 
 11. Create some new "todo" tasks by clicking the **+** button, entering an **Item Name** and clicking
     the **Save** button.
